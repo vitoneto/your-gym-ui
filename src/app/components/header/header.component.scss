@@ -1,0 +1,40 @@
+@import '../../../assets/scss/colors.scss';
+
+header {
+    width: 100vw;
+    height: 100px;
+    background-color: $gray;
+    .wrapper {
+        .logo {
+            display: inline-block;
+            h2 {
+                line-height: 34px;
+                font-size: 34px;
+                margin-top: calc(50px - 20px);
+                b:nth-child(2) {
+                    color: $orange;
+                }
+            }
+        }
+
+        .menu {
+            width: calc(100% - 300px);
+            margin: 0 auto;
+            display: inline-block;
+            text-align: center;
+            .links {
+                width: 250px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                a {
+                    text-decoration: none;
+                    h3 {
+                        display: inline-block;
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+}
