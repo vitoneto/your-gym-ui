@@ -1,0 +1,46 @@
+@import '../../../assets/scss/colors.scss';
+
+section {
+    article.spootlight {
+        background: $gray;
+        figure {
+            img {
+                max-width: 100%;
+                width: 100vw;
+            }
+        }
+    }
+
+    article.life-fitness {
+        background: $gray;
+        min-height: 510px;
+        figure {
+            padding: 40px;
+            width: 50%;
+            display: inline-block;
+            text-align: right;
+            img {
+                border-radius: 10px;
+                max-width: 700px;
+                width: 100%;
+            }
+        }
+
+        .life-fitness-text {
+            display: inline-block;
+            vertical-align: top;
+            width: 50%;
+            text-align: center;
+            margin-top: 140px;
+            h2 {
+                color: $orange;
+            }
+
+            p {
+                color: $gray-xxlight;
+                max-width: 500px;
+                margin: 20px auto 0 auto;
+            }
+        }
+    }
+}
