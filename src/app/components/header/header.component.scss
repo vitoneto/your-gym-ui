@@ -5,6 +5,10 @@ header {
     height: 100px;
     background-color: $gray;
     .wrapper {
+        .humburguer-icon {
+            display: none;
+        }
+
         .logo {
             display: inline-block;
             h2 {
@@ -37,4 +41,43 @@ header {
             }
         }
     }
+}
+
+@media only screen and (max-width: 767px) {
+    :host {
+        header{
+            height: 60px;
+            .wrapper {
+                .humburguer-icon{
+                    display: inline-block !important;
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    top: calc(30px - 15px);
+                    .humberguer-line {
+                        width: 100%;
+                        height: 3px;
+                        background-color: $orange;
+                        margin: 4px 0;
+                    }
+                }
+
+                .logo {
+                    display: block;
+                    position: absolute;
+                    width: 100vw;
+                    right: 0;
+                    top: calc(30px - 17px);
+                    h2{
+                        width: 155px;
+                        margin: 0 auto;
+                    }
+                }
+
+                .menu {
+                    display: none;
+                }
+            }
+        }
+        }
 }
