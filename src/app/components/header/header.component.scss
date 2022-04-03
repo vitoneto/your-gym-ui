@@ -11,6 +11,7 @@ header {
 
         .logo {
             display: inline-block;
+            z-index: 0;
             h2 {
                 line-height: 34px;
                 font-size: 34px;
@@ -45,20 +46,43 @@ header {
 
 @media only screen and (max-width: 767px) {
     :host {
-        header{
+        header {
             height: 60px;
             .wrapper {
-                .humburguer-icon{
+                .humburguer-icon {
                     display: inline-block !important;
                     position: absolute;
                     width: 30px;
                     height: 30px;
                     top: calc(30px - 15px);
+                    z-index: 1;
                     .humberguer-line {
                         width: 100%;
                         height: 3px;
                         background-color: $orange;
                         margin: 4px 0;
+                        border-radius: 7px;
+                    }
+
+                    &.menuOpen {
+                        .humberguer-line {
+                            position: absolute;
+                            top: 6px;
+                        }
+
+                        .humberguer-line:nth-child(3) {
+                            display: none;
+                        }
+
+                        .humberguer-line:nth-child(1) {
+                            transition: 0.7s;
+                            transform: rotate(45deg);
+                        }
+
+                        .humberguer-line:nth-child(2) {
+                            transition: 0.7s;
+                            transform: rotate(134deg);
+                        }
                     }
                 }
 
@@ -68,7 +92,7 @@ header {
                     width: 100vw;
                     right: 0;
                     top: calc(30px - 17px);
-                    h2{
+                    h2 {
                         width: 155px;
                         margin: 0 auto;
                     }
@@ -79,5 +103,5 @@ header {
                 }
             }
         }
-        }
+    }
 }
