@@ -1,20 +1,20 @@
 <header>
     <div class="wrapper">
         <div
-            class="humburguer-icon"
-            [class.menuOpen]="menuMobile"
+            class="hamburger-icon"
+            [class.hamburgerToX]="menuMobile"
             (click)="openMenu()"
         >
-            <div class="humberguer-line"></div>
-            <div class="humberguer-line"></div>
-            <div class="humberguer-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
         </div>
 
         <div class="logo">
             <h2><b>Your</b> <b> Gym</b></h2>
         </div>
 
-        <div class="menu">
+        <div class="menu" [class.menuOpenedMobile]="menuMobile">
             <div class="links">
                 <a href="#"><h3>Home</h3></a>
                 <a href="#"><h3>About</h3></a>
