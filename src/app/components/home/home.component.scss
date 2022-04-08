@@ -1,7 +1,8 @@
 @import '../../../assets/scss/colors.scss';
 
-section {
-    article.spootlight {
+.spootlight {
+    background: $black;
+    article {
         background: $gray;
         figure {
             img {
@@ -10,7 +11,9 @@ section {
             }
         }
     }
+}
 
+section {
     article.life-fitness {
         background: $gray;
         min-height: 510px;

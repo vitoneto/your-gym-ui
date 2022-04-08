@@ -12,13 +12,13 @@ header {
         .logo {
             display: inline-block;
             z-index: 0;
-            h2 {
+            span {
                 line-height: 34px;
                 font-size: 34px;
                 margin-top: calc(50px - 20px);
-                b:nth-child(2) {
-                    color: $orange;
-                }
+            }
+            span:nth-child(2) {
+                color: $orange;
             }
         }
 
@@ -45,6 +45,11 @@ header {
         .menuMobile {
             display: none;
         }
+    }
+
+    .vertical-middle {
+        position: relative;
+        top: calc(50% - 17px);
     }
 }
 
@@ -102,10 +107,7 @@ header {
                     width: 100vw;
                     right: 0;
                     top: calc(30px - 17px);
-                    h2 {
-                        width: 155px;
-                        margin: 0 auto;
-                    }
+                    text-align: center;
                 }
 
                 .menu {
@@ -139,6 +141,10 @@ header {
                         }
                     }
                 }
+            }
+
+            .vertical-middle {
+                position: initial;
             }
         }
     }
