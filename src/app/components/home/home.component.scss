@@ -13,28 +13,17 @@
     }
 }
 
-section {
-    article.life-fitness {
-        background: $gray;
-        min-height: 510px;
-        figure {
-            padding: 40px;
-            width: 50%;
-            display: inline-block;
-            text-align: right;
-            img {
-                border-radius: 10px;
-                max-width: 700px;
-                width: 100%;
-            }
-        }
-
+section.life-fitness {
+    background: $gray;
+    min-height: 510px;
+    article {
         .life-fitness-text {
             display: inline-block;
             vertical-align: top;
-            width: 50%;
+            width: calc(100% - 600px);
             text-align: center;
             margin-top: 140px;
+            padding-left: 10px;
             h2 {
                 color: $orange;
             }
@@ -43,6 +32,38 @@ section {
                 color: $gray-xxlight;
                 max-width: 500px;
                 margin: 20px auto 0 auto;
+            }
+        }
+
+        figure {
+            padding: 40px 20px;
+            width: 600px;
+            display: inline-block;
+            text-align: right;
+            img {
+                border-radius: 10px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    :host {
+        section.life-fitness {
+            article {
+                div.life-fitness-text {
+                    display: block;
+                    padding: 130px 0;
+                    width: 100%;
+                    margin: 0;
+                }
+
+                figure {
+                    padding: 0;
+                    display: block;
+                    width: 100%;
+                }
             }
         }
     }
