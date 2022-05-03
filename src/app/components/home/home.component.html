@@ -1,29 +1,28 @@
 <div class="spootlight">
-    <article class="spootlight">
-        <figure>
-            <img src="../../../assets/img/destaque2.jpeg" alt="destaque" />
-        </figure>
-    </article>
+  <article class="spootlight">
+    <figure>
+      <img src="../../../assets/img/destaque2.jpeg" alt="destaque" />
+    </figure>
+  </article>
 </div>
-
 <section class="life-fitness">
-    <article class="wrapper">
-        <div class="life-fitness-text">
-            <h2>Life Fitness</h2>
-
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. At,
-                dolor totam non assumenda ut voluptatibus fuga provident porro?
-                Voluptatum, repellendus reprehenderit similique blanditiis
-                cumque quasi?
-            </p>
-        </div>
-
-        <figure>
-            <img
-                src="../../../assets/img/life-fitness.app.jpeg"
-                alt="fitness woman"
-            />
-        </figure>
+  <article class="wrapper">
+    <div class="life-fitness-text">
+      <h2>Life Fitness</h2>
+      <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, dolor totam non assumenda ut voluptatibus fuga
+        provident porro? Voluptatum, repellendus reprehenderit similique blanditiis cumque quasi? </p>
+    </div>
+    <figure>
+      <img src="../../../assets/img/life-fitness.app.jpeg" alt="fitness woman" />
+    </figure>
+  </article>
+</section>
+<section class="quality-life">
+  <div class="wrapper flex-space-around">
+    <article class="card" *ngFor="let card of cards">
+      <div>
+        <h3> {{ card.label }} </h3>
+      </div>
     </article>
+  </div>
 </section>

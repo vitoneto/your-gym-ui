@@ -48,6 +48,21 @@ section.life-fitness {
     }
 }
 
+section.quality-life {
+    .flex-space-around {
+        display: flex;
+        justify-content: space-around;
+    }
+    .card {
+        width: 200px;
+        height: 150px;
+        background: $orange;
+        border-radius: 7px;
+        padding: 10px;
+        display: inline-block;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
     :host {
         section.life-fitness {
