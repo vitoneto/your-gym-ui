@@ -51,7 +51,7 @@ section.life-fitness {
 
 section.quality-life {
     background: $gray-xdark;
-    background-image: linear-gradient(180deg, $gray-xdark 50%, $gray 50%);
+    background-image: linear-gradient(180deg, $gray-xdark 46%, $gray 65%);
     height: 800px;
 
     .section-title {
@@ -98,6 +98,15 @@ section.quality-life {
             border-radius: 7px;
             padding: 10px;
             display: inline-block;
+            margin: 100px 0 0 200px;
+            div {
+                margin-top: 10px;
+            }
+
+            p {
+                margin-top: 40px;
+                text-align: center;
+            }
         }
     }
 }
