@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 export interface bigCardInterface {
+    bigCardAnimation: string;
     icon: string;
     label: string;
 }
@@ -11,11 +12,25 @@ export interface bigCardInterface {
 })
 export class HomeComponent implements OnInit {
     cards = [
-        { icon: 'health', label: 'Health' },
-        { icon: 'muscle', label: 'Muscle mass' },
-        { icon: 'strongness', label: 'Strongness' }
+        {
+            icon: 'health',
+            label: 'Health',
+            bigCardAnimation: 'animate__flipInY'
+        },
+        {
+            icon: 'muscle',
+            label: 'Muscle mass',
+            bigCardAnimation: 'animate__bounceIn'
+        },
+        {
+            icon: 'strongness',
+            label: 'Strongness',
+            bigCardAnimation: 'animate__fadeIn'
+        }
     ];
     bigCard: bigCardInterface;
+    bigCardChanged: boolean = false;
+    bigCardAnimate: any;
 
     constructor() {}
 
@@ -25,5 +40,10 @@ export class HomeComponent implements OnInit {
 
     SelectedCard(index: number) {
         this.bigCard = this.cards[index];
+        this.bigCardChanged = true;
+        clearTimeout(this.bigCardAnimate);
+        this.bigCardAnimate = setTimeout(() => {
+            this.bigCardChanged = false;
+        }, 1000);
     }
 }

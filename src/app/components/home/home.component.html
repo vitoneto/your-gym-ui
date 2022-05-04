@@ -21,18 +21,18 @@
   <div class="section-title">
     <h2>Quality Life</h2>
   </div>
-  <div class="wrapper flex-space-around">
-    <article class="card" *ngFor="let card of cards; index as i" (click)="SelectedCard(i)">
+  <article class="wrapper flex-space-around">
+    <div class="card c-pointer" *ngFor="let card of cards; index as i" (click)="SelectedCard(i)">
       <div class="icon-40">
         <img src="../../../assets/icons/{{card.icon}}.png" alt="">
       </div>
       <div class="txt-center">
         <h3> {{ card.label }} </h3>
       </div>
-    </article>
-  </div>
-  <article>
-    <div class="big-card">
+    </div>
+  </article>
+  <article class="wrapper">
+    <div class="big-card animate__animated" [ngClass]="bigCardChanged == true ? bigCard.bigCardAnimation : ''">
       <div class="icon-40">
         <img src="../../../assets/icons/{{bigCard.icon}}.png" alt="">
       </div>

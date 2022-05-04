@@ -74,6 +74,7 @@ section.quality-life {
             border-radius: 7px;
             padding: 10px;
             display: inline-block;
+            transition: 0.5s;
             div {
                 display: block;
                 margin-top: 10px;
@@ -81,6 +82,11 @@ section.quality-life {
                     color: black;
                 }
             }
+        }
+
+        .card:hover {
+            transform: rotate(7deg) scale(1.1);
+            box-shadow: black 6px 6px 9px 0px;
         }
     }
 
