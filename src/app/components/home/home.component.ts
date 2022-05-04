@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
     cards = [
-        { icon: '', label: 'Saúde' },
-        { icon: '', label: 'Massa muscular' },
-        { icon: '', label: 'Força' }
+        { icon: 'health', label: 'Health' },
+        { icon: 'muscle', label: 'Muscle mass' },
+        { icon: 'strongness', label: 'Strongness' }
     ];
 
     constructor() {}

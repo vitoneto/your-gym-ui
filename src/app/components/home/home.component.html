@@ -18,8 +18,14 @@
   </article>
 </section>
 <section class="quality-life">
+  <div class="section-title">
+    <h2>Quality Life</h2>
+  </div>
   <div class="wrapper flex-space-around">
     <article class="card" *ngFor="let card of cards">
+      <div class="icon">
+        <img src="../../../assets/icons/{{card.icon}}.png" alt="">
+      </div>
       <div>
         <h3> {{ card.label }} </h3>
       </div>
