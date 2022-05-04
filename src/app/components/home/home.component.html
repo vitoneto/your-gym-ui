@@ -22,13 +22,23 @@
     <h2>Quality Life</h2>
   </div>
   <div class="wrapper flex-space-around">
-    <article class="card" *ngFor="let card of cards">
-      <div class="icon">
+    <article class="card" *ngFor="let card of cards; index as i" (click)="SelectedCard(i)">
+      <div class="icon-40">
         <img src="../../../assets/icons/{{card.icon}}.png" alt="">
       </div>
-      <div>
+      <div class="txt-center">
         <h3> {{ card.label }} </h3>
       </div>
     </article>
   </div>
+  <article>
+    <div class="big-card">
+      <div class="icon-40">
+        <img src="../../../assets/icons/{{bigCard.icon}}.png" alt="">
+      </div>
+      <div class="txt-center">
+        <h3> {{ bigCard.label }} </h3>
+      </div>
+    </div>
+  </article>
 </section>

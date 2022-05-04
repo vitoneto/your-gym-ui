@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+export interface bigCardInterface {
+    icon: string;
+    label: string;
+}
 
 @Component({
     selector: 'app-home',
@@ -11,8 +15,15 @@ export class HomeComponent implements OnInit {
         { icon: 'muscle', label: 'Muscle mass' },
         { icon: 'strongness', label: 'Strongness' }
     ];
+    bigCard: bigCardInterface;
 
     constructor() {}
 
-    ngOnInit(): void {}
+    ngOnInit(): void {
+        this.SelectedCard(0);
+    }
+
+    SelectedCard(index: number) {
+        this.bigCard = this.cards[index];
+    }
 }
