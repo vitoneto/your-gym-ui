@@ -91,21 +91,37 @@ section.quality-life {
     }
 
     article {
-        .big-card {
-            width: 200px;
-            height: 400px;
-            background: $orange;
-            border-radius: 7px;
-            padding: 10px;
+        .big-card-content {
+            width: 50%;
             display: inline-block;
-            margin: 100px 0 0 200px;
-            div {
-                margin-top: 10px;
-            }
+            vertical-align: top;
+            .big-card {
+                width: 200px;
+                height: 400px;
+                background: $orange;
+                border-radius: 7px;
+                padding: 10px;
+                display: inline-block;
+                div {
+                    margin-top: 10px;
+                }
 
-            p {
-                margin-top: 40px;
-                text-align: center;
+                p {
+                    margin-top: 40px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .dinamic-picture {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            figure {
+                img {
+                    width: 300px;
+                    border-radius: 10px;
+                }
             }
         }
     }

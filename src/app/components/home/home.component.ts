@@ -11,6 +11,8 @@ export interface bigCardInterface {
     styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+    currentDinamicPicture: number = 0;
+
     cards = [
         {
             icon: 'health',
@@ -40,6 +42,7 @@ export class HomeComponent implements OnInit {
 
     SelectedCard(index: number) {
         this.bigCard = this.cards[index];
+        this.currentDinamicPicture = index;
         this.bigCardChanged = true;
         clearTimeout(this.bigCardAnimate);
         this.bigCardAnimate = setTimeout(() => {
