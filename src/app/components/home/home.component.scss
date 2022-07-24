@@ -131,3 +131,23 @@ section.quality-life {
         }
     }
 }
+
+@media only screen and (max-width: 685px) {
+    :host {
+        section.quality-life {
+            article {
+                .card {
+                    width: 70px;
+                    height: 100px;
+                    padding: 5px;
+
+                    .txt-center {
+                        h3 {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
