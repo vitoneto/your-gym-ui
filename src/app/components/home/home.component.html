@@ -17,7 +17,7 @@
     </figure>
   </article>
 </section>
-<section class="quality-life">
+<section class="quality-life" [class]="bigCardpicture">
   <div class="section-title">
     <h2>Quality Life</h2>
   </div>
@@ -32,7 +32,7 @@
     </div>
   </article>
   <article class="wrapper">
-    <div class="big-card animate__animated" [ngClass]="bigCardChanged == true ? bigCard.bigCardAnimation : ''">
+    <div class="big-card animate__animated">
       <div class="icon-40">
         <img src="../../../assets/icons/{{bigCard.icon}}.png" alt="">
       </div>
@@ -42,5 +42,8 @@
       <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, dolor totam non assumenda ut voluptatibus fuga
         provident porro? Voluptatum, repellendus reprehenderit similique blanditiis cumque quasi? </p>
     </div>
+    <figure>
+      <img [src]=" '../../../assets/img/quality-life-photo-' + cadSelectedIndex + '.jpeg' " alt="">
+    </figure>
   </article>
 </section>

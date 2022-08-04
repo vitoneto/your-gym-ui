@@ -11,16 +11,22 @@ export interface bigCardInterface {
     styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+    bigCard: bigCardInterface;
+    bigCardChanged: boolean = false;
+    bigCardAnimate: any;
+    cadSelectedIndex: number = 0;
+    bigCardpicture: string = 'muscle-mass';
+
     cards = [
-        {
-            icon: 'health',
-            label: 'Health',
-            bigCardAnimation: 'animate__flipInY'
-        },
         {
             icon: 'muscle',
             label: 'Muscle mass',
             bigCardAnimation: 'animate__bounceIn'
+        },
+        {
+            icon: 'health',
+            label: 'Health',
+            bigCardAnimation: 'animate__flipInY'
         },
         {
             icon: 'strongness',
@@ -28,9 +34,6 @@ export class HomeComponent implements OnInit {
             bigCardAnimation: 'animate__fadeIn'
         }
     ];
-    bigCard: bigCardInterface;
-    bigCardChanged: boolean = false;
-    bigCardAnimate: any;
 
     constructor() {}
 
@@ -39,11 +42,27 @@ export class HomeComponent implements OnInit {
     }
 
     SelectedCard(index: number) {
+        this.cadSelectedIndex = index;
         this.bigCard = this.cards[index];
         this.bigCardChanged = true;
+        this.chooseRightPicture(index);
         clearTimeout(this.bigCardAnimate);
         this.bigCardAnimate = setTimeout(() => {
             this.bigCardChanged = false;
         }, 1000);
+    }
+
+    chooseRightPicture(index: number) {
+        switch (index) {
+            case 0:
+                this.bigCardpicture = 'muscle-mass';
+                break;
+            case 1:
+                this.bigCardpicture = 'health';
+                break;
+            case 2:
+                this.bigCardpicture = 'strongness';
+                break;
+        }
     }
 }
