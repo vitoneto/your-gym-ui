@@ -120,6 +120,28 @@ section.quality-life {
             }
         }
     }
+
+    .i-want {
+        display: block;
+        text-align: center;
+        margin: 50px 0;
+        padding: 10px 0 50px;
+        background: $gray;
+        button {
+            border: none;
+            background-color: $black;
+            color: $orange;
+            width: 200px;
+            height: 70px;
+            text-align: center;
+            border-radius: 7px;
+            font-size: 25px;
+        }
+
+        button:active {
+            transform: scale(0.9);
+        }
+    }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -186,28 +208,38 @@ section.quality-life {
 @media only screen and (max-width: 660px) {
     :host {
         section.quality-life {
+            article {
+                .big-card {
+                    background: #ff9c09bd;
+                }
+            }
+
             &.muscle-mass {
-                background: unset;
                 background-image: url('../../../assets/img/quality-life-photo-0.jpeg');
                 background-size: 100%;
+                background-repeat: no-repeat;
             }
 
             &.health {
-                background: unset;
                 background-image: url('../../../assets/img/quality-life-photo-1.jpeg');
                 background-size: 100%;
+                background-repeat: no-repeat;
             }
 
             &.strongness {
-                background: unset;
                 background-image: url('../../../assets/img/quality-life-photo-2.jpeg');
                 background-size: 100%;
+                background-repeat: no-repeat;
             }
 
             article {
                 figure {
                     display: none;
                 }
+            }
+
+            .i-want {
+                background: $gray-xdark;
             }
         }
     }
