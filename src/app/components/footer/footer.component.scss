@@ -1,0 +1,19 @@
+@import '../../../assets/scss/colors.scss';
+
+footer {
+    height: 700px;
+    background-color: black;
+    .social-media {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 100px;
+        background-color: $orange;
+        img {
+            width: 40px;
+            height: 40px;
+            margin: 10px 20px;
+            cursor: pointer;
+        }
+    }
+}

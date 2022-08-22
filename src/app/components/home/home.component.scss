@@ -121,11 +121,10 @@ section.quality-life {
         }
     }
 
-    .i-want {
+    .know-more {
         display: block;
         text-align: center;
         margin: 50px 0;
-        padding: 10px 0 50px;
         background: $gray;
         button {
             border: none;
@@ -135,6 +134,7 @@ section.quality-life {
             height: 70px;
             text-align: center;
             border-radius: 7px;
+            border: 1px solid $orange;
             font-size: 25px;
         }
 
@@ -238,7 +238,7 @@ section.quality-life {
                 }
             }
 
-            .i-want {
+            .know-more {
                 background: $gray-xdark;
             }
         }
