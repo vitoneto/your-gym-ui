@@ -16,4 +16,52 @@ footer {
             cursor: pointer;
         }
     }
+
+    .links {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: calc(50% - 100px);
+        a {
+            margin: 0 30px;
+            text-decoration: none;
+            color: $gray-xxlight;
+            cursor: pointer;
+        }
+
+        a::after {
+            content: '';
+            display: block;
+            transition: 0.5s;
+            height: 2px;
+            width: 0;
+            background-color: $gray-xxlight;
+        }
+
+        a:hover::after {
+            width: 150%;
+        }
+    }
+
+    .newsletter {
+        position: relative;
+        top: calc(50%);
+        text-align: center;
+        label {
+            display: block;
+            color: $gray-xxlight;
+            width: 300px;
+            margin: auto;
+            text-align: left;
+        }
+
+        input {
+            height: 40px;
+            width: 300px;
+            border-radius: 0 7px 7px 7px;
+            border: none;
+            padding: 10px;
+            outline: none;
+        }
+    }
 }

@@ -1,52 +1,52 @@
 <div class="spootlight">
-  <article class="spootlight">
-    <figure>
-      <img src="../../../assets/img/destaque2.jpeg" alt="destaque" />
-    </figure>
-  </article>
+	<article class="spootlight">
+		<figure>
+			<img src="../../../assets/img/destaque2.jpeg" alt="destaque" />
+		</figure>
+	</article>
 </div>
 <section class="life-fitness pb-50">
-  <article class="wrapper">
-    <div class="life-fitness-text">
-      <h2>Life Fitness</h2>
-      <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, dolor totam non assumenda ut voluptatibus fuga
-        provident porro? Voluptatum, repellendus reprehenderit similique blanditiis cumque quasi? </p>
-    </div>
-    <figure>
-      <img src="../../../assets/img/life-fitness.app.jpeg" alt="fitness woman" />
-    </figure>
-  </article>
+	<article class="wrapper">
+		<div class="life-fitness-text">
+			<h2>Life Fitness</h2>
+			<p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, dolor totam non assumenda ut voluptatibus
+				fuga provident porro? Voluptatum, repellendus reprehenderit similique blanditiis cumque quasi? </p>
+		</div>
+		<figure>
+			<img src="../../../assets/img/life-fitness.jpeg" alt="fitness woman" />
+		</figure>
+	</article>
 </section>
 <section class="quality-life" [class]="bigCardpicture">
-  <div class="section-title">
-    <h2>Quality Life</h2>
-  </div>
-  <article class="wrapper flex-space-around">
-    <div class="card c-pointer" *ngFor="let card of cards; index as i" (click)="SelectedCard(i)">
-      <div class="icon-40">
-        <img src="../../../assets/icons/{{card.icon}}.png" alt="">
-      </div>
-      <div class="txt-center">
-        <h3> {{ card.label }} </h3>
-      </div>
-    </div>
-  </article>
-  <article class="wrapper">
-    <div class="big-card animate__animated">
-      <div class="icon-40">
-        <img src="../../../assets/icons/{{bigCard.icon}}.png" alt="">
-      </div>
-      <div class="txt-center">
-        <h3> {{ bigCard.label }} </h3>
-      </div>
-      <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, dolor totam non assumenda ut voluptatibus fuga
-        provident porro? Voluptatum, repellendus reprehenderit similique blanditiis cumque quasi? </p>
-    </div>
-    <figure>
-      <img [src]=" '../../../assets/img/quality-life-photo-' + cadSelectedIndex + '.jpeg' " alt="">
-    </figure>
-  </article>
-  <div class="know-more">
-    <button class="c-pointer"> Know more </button>
-  </div>
+	<div class="section-title">
+		<h2>Quality Life</h2>
+	</div>
+	<article class="wrapper flex-space-around">
+		<div class="card c-pointer" *ngFor="let card of cards; index as i" (click)="SelectedCard(i)">
+			<div class="icon-40">
+				<img src="../../../assets/icons/{{card.icon}}.png" alt="">
+			</div>
+			<div class="txt-center">
+				<h3> {{ card.label }} </h3>
+			</div>
+		</div>
+	</article>
+	<article class="wrapper">
+		<div class="big-card animate__animated">
+			<div class="icon-40">
+				<img src="../../../assets/icons/{{bigCard.icon}}.png" alt="">
+			</div>
+			<div class="txt-center">
+				<h3> {{ bigCard.label }} </h3>
+			</div>
+			<p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, dolor totam non assumenda ut voluptatibus
+				fuga provident porro? Voluptatum, repellendus reprehenderit similique blanditiis cumque quasi? </p>
+		</div>
+		<figure>
+			<img [src]=" '../../../assets/img/quality-life-photo-' + cadSelectedIndex + '.jpeg' " alt="">
+		</figure>
+	</article>
+	<div class="know-more">
+		<button class="c-pointer"> Know more </button>
+	</div>
 </section>
