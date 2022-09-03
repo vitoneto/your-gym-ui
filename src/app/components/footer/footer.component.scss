@@ -50,18 +50,48 @@ footer {
         label {
             display: block;
             color: $gray-xxlight;
-            width: 300px;
+            width: 380px;
             margin: auto;
             text-align: left;
         }
 
         input {
+            display: inline-block;
             height: 40px;
             width: 300px;
             border-radius: 0 7px 7px 7px;
             border: none;
             padding: 10px;
             outline: none;
+            vertical-align: top;
+        }
+
+        button {
+            display: inline-block;
+            position: relative;
+            left: 10px;
+            border: none;
+            width: 80px;
+            height: 40px;
+            background-color: $orange;
+            vertical-align: top;
+            border-radius: 7px;
+            cursor: pointer;
+
+            span {
+                position: absolute;
+                left: 10px;
+                font-size: 15px;
+                vertical-align: top;
+                top: calc(50% - 9px);
+            }
+
+            img {
+                position: absolute;
+                width: 20px;
+                right: 10px;
+                top: calc(50% - 10px);
+            }
         }
     }
 }
