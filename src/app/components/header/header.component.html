@@ -1,26 +1,32 @@
 <header>
-    <div class="wrapper vertical-middle">
-        <div
-            class="hamburger-icon"
-            [class.hamburgerToX]="menuMobile"
-            (click)="openMenu()"
-        >
-            <div class="hamburger-line"></div>
-            <div class="hamburger-line"></div>
-            <div class="hamburger-line"></div>
-        </div>
-
-        <div class="logo">
-            <span>Your</span>
-            <span> Gym</span>
-        </div>
-
-        <div class="menu" [class.menuOpenedMobile]="menuMobile">
-            <div class="links">
-                <a href="#"><h3>Home</h3></a>
-                <a href="#"><h3>About</h3></a>
-                <a href="#"><h3>Contact</h3></a>
-            </div>
-        </div>
+  <div class="wrapper vertical-middle">
+    <div class="hamburger-icon" [class.hamburgerToX]="menuMobile" (click)="openMenu()">
+      <div class="hamburger-line"></div>
+      <div class="hamburger-line"></div>
+      <div class="hamburger-line"></div>
     </div>
+    <div class="logo">
+      <span>Your</span>
+      <span> Gym</span>
+    </div>
+    <div class="menu" [class.menuOpenedMobile]="menuMobile">
+      <div class="links">
+        <a href="#">
+          <h3>Home</h3>
+        </a>
+        <a href="#">
+          <h3>About</h3>
+        </a>
+        <a href="#">
+          <h3>Contact</h3>
+        </a>
+      </div>
+    </div>
+    <div class="social-media">
+      <img src="../../../assets/icons/twitter.png" alt="">
+      <img src="../../../assets/icons/facebook1.png" alt="">
+      <img src="../../../assets/icons/instagram.png" alt="">
+      <img src="../../../assets/icons/youtube.png" alt="">
+    </div>
+  </div>
 </header>
