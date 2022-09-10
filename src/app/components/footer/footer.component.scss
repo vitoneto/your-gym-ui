@@ -1,97 +1,119 @@
 @import '../../../assets/scss/colors.scss';
 
 footer {
-    height: 700px;
-    background-color: black;
-    .social-media {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        top: 100px;
-        background-color: $orange;
-        img {
-            width: 40px;
-            height: 40px;
-            margin: 10px 20px;
-            cursor: pointer;
-        }
-    }
+	height: 700px;
+	background-color: black;
+	.social-media {
+		display: flex;
+		justify-content: center;
+		position: relative;
+		top: 100px;
+		background-color: $orange;
+		img {
+			width: 40px;
+			height: 40px;
+			margin: 10px 20px;
+			cursor: pointer;
+		}
+	}
 
-    .links {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        top: calc(50% - 100px);
-        a {
-            margin: 0 30px;
-            text-decoration: none;
-            color: $gray-xxlight;
-            cursor: pointer;
-        }
+	.links {
+		display: flex;
+		justify-content: center;
+		position: relative;
+		top: calc(50% - 100px);
+		a {
+			margin: 0 30px;
+			text-decoration: none;
+			color: $gray-xxlight;
+			cursor: pointer;
+		}
 
-        a::after {
-            content: '';
-            display: block;
-            transition: 0.5s;
-            height: 2px;
-            width: 0;
-            background-color: $gray-xxlight;
-        }
+		a::after {
+			content: '';
+			display: block;
+			transition: 0.5s;
+			height: 2px;
+			width: 0;
+			background-color: $gray-xxlight;
+		}
 
-        a:hover::after {
-            width: 150%;
-        }
-    }
+		a:hover::after {
+			width: 150%;
+		}
+	}
 
-    .newsletter {
-        position: relative;
-        top: calc(50%);
-        text-align: center;
-        label {
-            display: block;
-            color: $gray-xxlight;
-            width: 380px;
-            margin: auto;
-            text-align: left;
-        }
+	.newsletter {
+		position: relative;
+		top: calc(50%);
+		text-align: center;
+		label {
+			display: block;
+			color: $gray-xxlight;
+			width: 380px;
+			margin: auto;
+			text-align: left;
+		}
 
-        input {
-            display: inline-block;
-            height: 40px;
-            width: 300px;
-            border-radius: 0 7px 7px 7px;
-            border: none;
-            padding: 10px;
-            outline: none;
-            vertical-align: top;
-        }
+		input {
+			display: inline-block;
+			height: 40px;
+			width: 300px;
+			border-radius: 0 7px 7px 7px;
+			border: none;
+			padding: 10px;
+			outline: none;
+			vertical-align: top;
+		}
 
-        button {
-            display: inline-block;
-            position: relative;
-            left: 10px;
-            border: none;
-            width: 80px;
-            height: 40px;
-            background-color: $orange;
-            vertical-align: top;
-            border-radius: 7px;
-            cursor: pointer;
+		button {
+			display: inline-block;
+			position: relative;
+			left: 10px;
+			border: none;
+			width: 80px;
+			height: 40px;
+			background-color: $orange;
+			vertical-align: top;
+			border-radius: 7px;
+			cursor: pointer;
 
-            span {
-                position: absolute;
-                left: 10px;
-                font-size: 15px;
-                vertical-align: top;
-                top: calc(50% - 9px);
-            }
+			span {
+				position: absolute;
+				left: 10px;
+				font-size: 15px;
+				vertical-align: top;
+				top: calc(50% - 9px);
+			}
 
-            img {
-                position: absolute;
-                width: 20px;
-                right: 10px;
-                top: calc(50% - 10px);
-            }
-        }
-    }
+			img {
+				position: absolute;
+				width: 20px;
+				right: 10px;
+				top: calc(50% - 10px);
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	:host {
+		footer {
+			.newsletter {
+				width: 100vw;
+				label {
+					width: 300px;
+				}
+
+				input {
+					display: block;
+					margin: 0 auto 10px;
+				}
+				button {
+					display: block;
+					margin: auto;
+				}
+			}
+		}
+	}
 }
