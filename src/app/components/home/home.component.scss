@@ -2,280 +2,276 @@
 @import '../../../assets/scss/helpers.scss';
 
 .spootlight {
-    background: $black;
-    article {
-        background: $gray;
-        figure {
-            img {
-                max-width: 100%;
-                width: 100vw;
-            }
-        }
-    }
+	background: $black;
+	article {
+		background: $gray;
+		figure {
+			img {
+				max-width: 100%;
+				width: 100vw;
+			}
+		}
+	}
 }
 
 section.life-fitness {
-    background: $gray;
-    min-height: 510px;
-    article {
-        .life-fitness-text {
-            display: inline-block;
-            vertical-align: top;
-            width: calc(100% - 600px);
-            text-align: center;
-            margin-top: 140px;
-            padding-left: 10px;
-            h2 {
-                color: $orange;
-            }
+	background: $gray;
+	min-height: 510px;
+	article {
+		.life-fitness-text {
+			display: inline-block;
+			vertical-align: top;
+			width: calc(100% - 600px);
+			text-align: center;
+			margin-top: 140px;
+			padding-left: 10px;
+			h2 {
+				color: $orange;
+			}
 
-            p {
-                color: $gray-xxlight;
-                max-width: 500px;
-                margin: 20px auto 0 auto;
-            }
-        }
+			p {
+				color: $gray-xxlight;
+				max-width: 500px;
+				margin: 20px auto 0 auto;
+			}
+		}
 
-        figure {
-            padding: 40px 20px;
-            width: 600px;
-            display: inline-block;
-            text-align: right;
-            img {
-                border-radius: 10px;
-                width: 100%;
-            }
-        }
-    }
+		figure {
+			padding: 40px 20px;
+			width: 600px;
+			display: inline-block;
+			text-align: right;
+			img {
+				border-radius: 10px;
+				width: 100%;
+			}
+		}
+	}
 }
 
 section.quality-life {
-    background: $gray-xdark;
-    background-image: linear-gradient(180deg, $gray-xdark 46%, $gray 65%);
-    height: 800px;
+	background: $gray-xdark;
+	background-image: linear-gradient(180deg, $gray-xdark 46%, $gray 65%);
+	height: 800px;
 
-    .section-title {
-        display: block;
-        text-align: center;
-        padding: 10px 0;
-        h2 {
-            color: $orange;
-        }
-    }
+	.section-title {
+		display: block;
+		text-align: center;
+		padding: 10px 0;
+		h2 {
+			color: $orange;
+		}
+	}
 
-    .flex-space-around {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 20px;
-        .card {
-            width: 200px;
-            height: 150px;
-            background: $orange;
-            border-radius: 7px;
-            padding: 10px;
-            display: inline-block;
-            transition: 0.5s;
-            div {
-                display: block;
-                margin-top: 10px;
-                h3 {
-                    color: black;
-                }
-            }
-        }
+	.flex-space-around {
+		display: flex;
+		justify-content: space-around;
+		margin-top: 20px;
+		.card {
+			width: 200px;
+			height: 150px;
+			background: $orange;
+			border-radius: 7px;
+			padding: 10px;
+			display: inline-block;
+			transition: 0.5s;
+			div {
+				display: block;
+				margin-top: 10px;
+				h3 {
+					color: black;
+				}
+			}
+		}
 
-        .card:hover {
-            transform: rotate(7deg) scale(1.1);
-            box-shadow: black 6px 6px 9px 0px;
-        }
-    }
+		.card:hover {
+			transform: rotate(7deg) scale(1.1);
+			box-shadow: black 6px 6px 9px 0px;
+		}
+	}
 
-    article {
-        .big-card {
-            width: 200px;
-            height: 400px;
-            background: $orange;
-            border-radius: 7px;
-            padding: 10px;
-            display: inline-block;
-            margin: 100px 0 0 200px;
-            div {
-                margin-top: 10px;
-            }
+	article {
+		.big-card {
+			width: 200px;
+			height: 400px;
+			background: $orange;
+			border-radius: 7px;
+			padding: 10px;
+			display: inline-block;
+			margin: 100px 0 0 200px;
+			div {
+				margin-top: 10px;
+			}
 
-            p {
-                margin-top: 40px;
-                text-align: center;
-            }
-        }
-        figure {
-            width: 300px;
-            display: inline-block;
-            position: absolute;
-            margin-left: 300px;
-            margin-top: 100px;
-            img {
-                width: 100%;
-                border-radius: 10px;
-            }
-        }
-    }
+			p {
+				margin-top: 40px;
+				text-align: center;
+			}
+		}
+		figure {
+			width: 300px;
+			display: inline-block;
+			position: absolute;
+			margin-left: 300px;
+			margin-top: 100px;
+			img {
+				width: 100%;
+				border-radius: 10px;
+			}
+		}
+	}
 
-    .know-more {
-        display: block;
-        text-align: center;
-        margin: 50px 0;
-        background: transparent;
-        button {
-            border: none;
-            background-color: $black;
-            color: $orange;
-            width: 200px;
-            height: 70px;
-            text-align: center;
-            border-radius: 7px;
-            border: 1px solid $orange;
-            font-size: 25px;
-        }
+	.know-more {
+		display: block;
+		text-align: center;
+		margin: 50px 0;
+		background: transparent;
+		button {
+			border: none;
+			background-color: $black;
+			color: $orange;
+			width: 200px;
+			height: 70px;
+			text-align: center;
+			border-radius: 7px;
+			border: 1px solid $orange;
+			font-size: 25px;
+		}
 
-        button:active {
-            transform: scale(0.9);
-        }
-    }
+		button:active {
+			transform: scale(0.9);
+		}
+	}
 }
 
 @media only screen and (max-width: 1100px) {
-    :host {
-        section.quality-life {
-            article {
-                figure {
-                    margin-left: 150px;
-                }
-            }
-        }
-    }
+	:host {
+		section.quality-life {
+			article {
+				figure {
+					margin-left: 150px;
+				}
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 1000px) {
-    :host {
-        section {
-            &.life-fitness {
-                article {
-                    div.life-fitness-text {
-                        display: block;
-                        padding: 130px 0;
-                        width: 100%;
-                        margin: 0;
-                    }
+	:host {
+		section {
+			&.life-fitness {
+				article {
+					div.life-fitness-text {
+						display: block;
+						padding: 130px 0;
+						width: 100%;
+						margin: 0;
+					}
 
-                    figure {
-                        padding: 0;
-                        display: block;
-                        width: 100%;
-                    }
-                }
-            }
+					figure {
+						padding: 0;
+						display: block;
+						width: 100%;
+					}
+				}
+			}
 
-            &.quality-life {
-                article {
-                    .card {
-                        width: 150px;
-                        height: 100px;
-                    }
+			&.quality-life {
+				article {
+					.card {
+						width: 150px;
+						height: 100px;
+					}
 
-                    .big-card {
-                        margin-left: 50px;
-                    }
-                }
-            }
-        }
-    }
+					.big-card {
+						margin-left: 50px;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 800px) {
-    :host {
-        section.quality-life {
-            article {
-                figure {
-                    width: 200px;
-                    padding-top: 50px;
-                }
-            }
-        }
-    }
+	:host {
+		section.quality-life {
+			article {
+				figure {
+					width: 200px;
+					padding-top: 50px;
+				}
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 660px) {
-    :host {
-        section.quality-life {
-            article {
-                .big-card {
-                    background: #ff9c09bd;
-                }
-            }
+	:host {
+		section.quality-life {
+			article {
+				.big-card {
+					background: #ff9c09bd;
+				}
+			}
 
-            &.muscle-mass {
-                background-image: url('../../../assets/img/quality-life-photo-0.jpeg');
-                background-size: 100%;
-                background-repeat: no-repeat;
-            }
+			&.muscle-mass {
+				background-image: url('../../../assets/img/quality-life-photo-0.jpeg');
+				background-size: 100%;
+				background-repeat: no-repeat;
+			}
 
-            &.health {
-                background-image: url('../../../assets/img/quality-life-photo-1.jpeg');
-                background-size: 100%;
-                background-repeat: no-repeat;
-            }
+			&.health {
+				background-image: url('../../../assets/img/quality-life-photo-1.jpeg');
+				background-size: 100%;
+				background-repeat: no-repeat;
+			}
 
-            &.strongness {
-                background-image: url('../../../assets/img/quality-life-photo-2.jpeg');
-                background-size: 100%;
-                background-repeat: no-repeat;
-            }
+			&.strongness {
+				background-image: url('../../../assets/img/quality-life-photo-2.jpeg');
+				background-size: 100%;
+				background-repeat: no-repeat;
+			}
 
-            article {
-                figure {
-                    display: none;
-                }
-            }
-
-            .know-more {
-                background: $gray-xdark;
-            }
-        }
-    }
+			article {
+				figure {
+					display: none;
+				}
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 530px) {
-    :host {
-        .wrapper:nth-child(3) {
-            padding: 100px 10px 0 10px;
-            text-align: center;
-        }
+	:host {
+		.wrapper:nth-child(3) {
+			padding: 100px 10px 0 10px;
+			text-align: center;
+		}
 
-        section {
-            &.quality-life {
-                article {
-                    .card {
-                        width: 60px;
-                        height: 60px;
-                        div {
-                            margin: 0;
-                        }
+		section {
+			&.quality-life {
+				article {
+					.card {
+						width: 60px;
+						height: 60px;
+						div {
+							margin: 0;
+						}
 
-                        div:nth-child(2) {
-                            display: none;
-                        }
-                    }
+						div:nth-child(2) {
+							display: none;
+						}
+					}
 
-                    .big-card {
-                        margin: 0;
-                    }
+					.big-card {
+						margin: 0;
+					}
 
-                    figure {
-                        display: none;
-                    }
-                }
-            }
-        }
-    }
+					figure {
+						display: none;
+					}
+				}
+			}
+		}
+	}
 }
